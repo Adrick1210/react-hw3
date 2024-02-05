@@ -4,7 +4,7 @@ function Button(props) {
         props.submit();
     }
     
-    return <button type="button" onClick={handleSubmit}>Make API Call Again</button>
+    return <button type="button" onClick={handleSubmit}>API CALL</button>
 }
 
 export default Button;
