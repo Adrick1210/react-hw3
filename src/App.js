@@ -15,7 +15,6 @@ function App() {
     const gif = `https://api.giphy.com/v1/gifs/random?api_key=${key}`;
     let res = await fetch(gif);
     let json = await res.json();
-    console.log("url", json.data.images.fixed_height.url);
     const fixedGif = json.data.images.fixed_height.url;
     setGif(fixedGif);
   };
